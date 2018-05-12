@@ -79,6 +79,7 @@ void setup(){
   }else{
     gridSize = 24;
   }
+  gridSize = 12;
   
   sequencer = new TrackSequencer(0, height + sequencerYOffset, width, -(height + sequencerYOffset), minim, gridSize);
 
@@ -359,13 +360,13 @@ void keyPressed(){
 }
 
 
-  if(key == 'w'){
+  if(key == 's'){
     up = true;
-  }if(key == 's'){
+  }if(key == 'w'){
     down = true;
-  }if(key == 'a'){
-    left = true;
   }if(key == 'd'){
+    left = true;
+  }if(key == 'a'){
     right = true;
   }
 }
